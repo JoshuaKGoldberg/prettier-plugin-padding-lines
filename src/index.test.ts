@@ -162,7 +162,7 @@ describe("parsers", () => {
 	it("defers to Prettier's own error when the source has a syntax error", async () => {
 		const act = async () => await formatTypeScript(`if (x) {\n`);
 
-		await expect(act).rejects.toThrowError();
+		await expect(act).rejects.toThrow();
 	});
 
 	it("produces the same output when formatted twice", async () => {

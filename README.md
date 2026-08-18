@@ -20,15 +20,47 @@
 
 ## Usage
 
+First install this package as a dev dependency in your package manager of choice:
+
 ```shell
-npm i prettier-plugin-padding-lines
+npm i prettier-plugin-padding-lines -D
 ```
 
-```ts
-import { greet } from "prettier-plugin-padding-lines";
+You'll then be able to list it as a [Prettier plugin](https://prettier.io/docs/en/plugins.html) in your [Prettier config](https://prettier.io/docs/en/configuration.html):
 
-greet("Hello, world! 🛋️");
+```json
+{
+	"plugins": ["prettier-plugin-padding-lines"]
+}
 ```
+
+As a result, Prettier will add a blank line after block-like statements such as `for`, `if`, and `while`:
+
+```diff
+  if (abc) {
+    def;
+  }
++
+  ghi();
+```
+
+Function declarations and functions assigned to variables are padded too.
+Class declarations and calls that take a function argument, such as `describe(...)`, are left alone.
+
+### But Why?
+
+Prettier [intentionally does not add empty lines](https://prettier.io/docs/en/rationale.html#empty-lines) and [declined to add an option for this](https://github.com/prettier/prettier/issues/13063).
+That leaves the concern to [ESLint's `padding-line-between-statements` rule](https://eslint.org/docs/latest/rules/padding-line-between-statements): a _formatting_ concern enforced by a _linter_.
+This plugin enforces the equivalent of that rule's `{ blankLine: "always", prev: "block-like", next: "*" }` option at the Prettier level.
+
+> See [The Blurry Line Between Formatting and Style](https://blog.joshuakgoldberg.com/the-blurry-line-between-formatting-and-style) for more details.
+
+### Compatibility
+
+Prettier resolves each parser to exactly one plugin: the last one listed that claims it.
+This plugin claims the `babel`, `babel-ts`, and `typescript` parsers, so it cannot be combined with other plugins that claim those same parsers.
+That includes `prettier-plugin-organize-imports` and `@ianvs/prettier-plugin-sort-imports`.
+See [prettier#12807](https://github.com/prettier/prettier/issues/12807) for the upstream issue.
 
 ## Development
 
