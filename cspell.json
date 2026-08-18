@@ -9,5 +9,18 @@
 		"node_modules",
 		"pnpm-lock.yaml"
 	],
-	"words": ["eeef", "ianvs"]
+	"words": [
+		"Anson",
+		"TSESTree",
+		"apexskier",
+		"attw",
+		"dbaeumer",
+		"eslint-doc-generatorrc",
+		"infile",
+		"joshuakgoldberg",
+		"mshick",
+		"octoguide",
+		"stefanzweifel",
+		"ts-prunerc"
+	]
 }
