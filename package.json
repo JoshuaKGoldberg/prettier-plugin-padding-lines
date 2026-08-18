@@ -1,6 +1,6 @@
 {
 	"name": "prettier-plugin-padding-lines",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Prettier plugin to enforce a blank line after block-like statements. 🛋️",
 	"repository": {
 		"type": "git",
