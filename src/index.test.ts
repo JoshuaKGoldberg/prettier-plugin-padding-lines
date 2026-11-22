@@ -1,7 +1,7 @@
 import { format } from "prettier";
 import { describe, expect, it } from "vitest";
 
-import * as plugin from "./index.js";
+import * as plugin from "./index.ts";
 
 async function formatTypeScript(text: string) {
 	return await format(text, { parser: "typescript", plugins: [plugin] });

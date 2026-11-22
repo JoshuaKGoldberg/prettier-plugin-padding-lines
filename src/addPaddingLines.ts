@@ -1,9 +1,9 @@
 import type { Parser, ParserOptions } from "prettier";
 
-import type { AstNode, Insertion } from "./types.js";
+import type { AstNode, Insertion } from "./types.ts";
 
-import { isBlockLike } from "./isBlockLike.js";
-import { isNode } from "./isNode.js";
+import { isBlockLike } from "./isBlockLike.ts";
+import { isNode } from "./isNode.ts";
 
 interface WalkContext {
 	comments: AstNode[];

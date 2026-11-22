@@ -1,6 +1,6 @@
-import type { AstNode } from "./types.js";
+import type { AstNode } from "./types.ts";
 
-import { isNode } from "./isNode.js";
+import { isNode } from "./isNode.ts";
 
 const blockBodiedFunctionTypes = new Set([
 	"ArrowFunctionExpression",
