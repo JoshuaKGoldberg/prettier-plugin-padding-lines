@@ -200,8 +200,8 @@ importers:
         specifier: 0.10.0
         version: 0.10.0
       create-typescript-app:
-        specifier: 2.77.0
-        version: 2.77.0(bingo-systems@0.7.0)(typescript@5.9.3)
+        specifier: 2.78.1
+        version: 2.78.1(bingo-systems@0.7.0)(typescript@5.9.3)
       cspell:
         specifier: 10.5.0
         version: 10.5.0
@@ -1988,8 +1988,8 @@ packages:
     engines: {node: '>=22'}
     hasBin: true
 
-  create-typescript-app@2.77.0:
-    resolution: {integrity: sha512-SsRbknJACpBYyo10JdSml1hHNq10BM+PjeosdRLXWC90xC1zv97jdR29jh/E6mMy84GLgFpL6YyZVn8XAGnscA==}
+  create-typescript-app@2.78.1:
+    resolution: {integrity: sha512-tdqwDtDkSGxhOaycKCn60y/1x6HuMhMQWoM5ZYcXg0hSGl7JupZpapkjG03KVg4IXb/BLa5QMv9jq5jg+AN1kw==}
     engines: {node: ^22.13.0 || ^24.11.0 || >=26.0.0}
     hasBin: true
 
@@ -4110,18 +4110,22 @@ packages:
   yuku-ast@0.19.0:
     resolution: {integrity: sha512-PyCsiScaelhxBGzL8dyeJkLqvRZycoh78R31Vrt/WqYrm0hMFoKwIw/X7Dx5mBKLWAMlV9I9HEyBOHnj2gZVyw==}
     engines: {node: '>=14.18.0'}
+    deprecated: 'Yuku is now one package with one core. Use "yuku" instead: https://yuku.fyi/javascript/. Existing installs keep working but get no more fixes.'
 
   yuku-codegen@0.19.0:
     resolution: {integrity: sha512-uymAKHjDuaP4BEpkXC/BSLz4DUEF5oArZ5AuD3888nb2miChjWSgpPdojEJxm3pjpXkgUaCRJQyNAbnMN33wHg==}
     engines: {node: '>=14.18.0'}
+    deprecated: 'Yuku is now one package with one core. Use "yuku" instead: https://yuku.fyi/javascript/. Existing installs keep working but get no more fixes.'
 
   yuku-core@0.19.0:
     resolution: {integrity: sha512-kYK9e1XdfirNhkipzW0wmMcSWcVF/CWnuugodfVYRCUwvoBefweL9HzB96OiKEhsx78V5WbUxbJqlizMX869Qg==}
     engines: {node: '>=14.18.0'}
+    deprecated: 'Yuku is now one package with one core. Use "yuku" instead: https://yuku.fyi/javascript/. Existing installs keep working but get no more fixes.'
 
   yuku-parser@0.19.0:
     resolution: {integrity: sha512-XrBh9ZiQK5mJVRxZBAvD6LwRyAYrK3MFtH3+onyuxFL5hFD44EC3QOmIC1FjTj6H2MMwq46/NAI+NZxLZPZgxg==}
     engines: {node: '>=14.18.0'}
+    deprecated: 'Yuku is now one package with one core. Use "yuku" instead: https://yuku.fyi/javascript/. Existing installs keep working but get no more fixes.'
 
   zod-package-json@2.1.0:
     resolution: {integrity: sha512-XLlyeEk+5q4m+GSNrTXAi9QwTbtOCHJOzr1eTCHsF6J5y8zypZRFCvfO1rOZ2CXht+9pY6DNpC7si1tcWESPCw==}
@@ -5756,7 +5760,7 @@ snapshots:
       conventional-commits-filter: 6.0.1
       conventional-commits-parser: 7.1.4
 
-  create-typescript-app@2.77.0(bingo-systems@0.7.0)(typescript@5.9.3):
+  create-typescript-app@2.78.1(bingo-systems@0.7.0)(typescript@5.9.3):
     dependencies:
       '@prettier/sync': 0.6.1(prettier@3.10.0)
       '@typescript-eslint/typescript-estree': 8.73.0(typescript@5.9.3)
