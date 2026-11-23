@@ -8,14 +8,9 @@
 import {
 	blockPrettier,
 	blockPrettierPluginCurly,
+	blockPrettierPluginPaddingLines,
 	createConfig,
-	presetEverything,
 } from "create-typescript-app";
-
-// create-typescript-app doesn't export blockPrettierPluginPaddingLines directly.
-const blockPrettierPluginPaddingLines = presetEverything.blocks.find(
-	(block) => block.about.name === "Prettier Plugin Padding Lines",
-);
 
 export default createConfig({
 	refinements: {
