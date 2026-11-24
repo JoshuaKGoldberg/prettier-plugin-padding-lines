@@ -1,1 +1,1 @@
-export { parsers } from "./parsers.js";
+export { parsers } from "./parsers.ts";

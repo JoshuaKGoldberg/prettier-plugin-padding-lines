@@ -3,7 +3,7 @@ import type { Parser } from "prettier";
 import * as babel from "prettier/plugins/babel";
 import * as typescript from "prettier/plugins/typescript";
 
-import { addPaddingLines } from "./addPaddingLines.js";
+import { addPaddingLines } from "./addPaddingLines.ts";
 
 function withPaddingLines(parser: Parser): Parser {
 	return {

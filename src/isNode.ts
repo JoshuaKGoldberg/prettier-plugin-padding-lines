@@ -1,4 +1,4 @@
-import type { AstNode } from "./types.js";
+import type { AstNode } from "./types.ts";
 
 export function isNode(value: unknown): value is AstNode {
 	return (
